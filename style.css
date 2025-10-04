@@ -1,0 +1,100 @@
+h1{
+text-align: center;
+text-decoration: dotted;
+    color: black;
+}
+p{
+    color: black;
+    text-align: center;
+}
+button{
+    text-align: center;
+
+}
+h2{
+    text-align: center;
+}
+body {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;}
+input[type="date"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    font-size: 1em;
+  }
+  /* 🌸 Style the birthday input box */
+input[type="date"] {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    background-color: #fff0f6;
+    color: #ff1493;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+  }
+  
+  /* 🌷 On focus (when she clicks the box) */
+  input[type="date"]:focus {
+    background-color: #ffe6f0;
+    border-color: #ff1493;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+    transform: scale(1.05);
+  }
+  
+  
+  #errorMsg {
+    color: #ff1744;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  button {
+    display: block;
+    margin: 20px auto;  /* centers it horizontally */
+    background-color: white;
+    color: #ff69b4;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: #409948;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.5);
+  }
+  button:hover::after {
+    content: " 💖";
+  }
+  .hidden {
+    display: none;
+  }
+  /* ✨ Smooth fade transition for page changes */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
