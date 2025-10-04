@@ -19,3 +19,25 @@ if (checkBtn) {
     }
   });
 }
+// Create floating hearts
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+  
+    // Random position and size
+    heart.style.left = Math.random() * window.innerWidth + 'px';
+    heart.style.width = 10 + Math.random() * 20 + 'px';
+    heart.style.height = heart.style.width;
+    heart.style.animationDuration = 4 + Math.random() * 3 + 's';
+  
+    document.querySelector('.hearts').appendChild(heart);
+  
+    // Remove heart after animation ends
+    setTimeout(() => {
+      heart.remove();
+    }, 7000);
+  }
+  
+  // Create a heart every 500ms
+  setInterval(createHeart, 500);
+  
